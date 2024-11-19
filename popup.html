@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Time Tracker</title>
+  <style>
+    body { width: 400px; font-family: Arial, sans-serif; }
+    h2 { margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    .button-container { display: flex; justify-content: space-between; margin-top: 15px; }
+    button { padding: 8px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Recent Website Visits</h2>
+  <table id="timeTable">
+    <tr>
+      <th>Timestamp</th>
+      <th>Website</th>
+      <th>Duration (min)</th>
+    </tr>
+  </table>
+  <div class="button-container">
+    <button id="resetButton">Reset Data</button>
+    <button id="exportButton">Export CSV</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

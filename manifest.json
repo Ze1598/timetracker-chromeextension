@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Website Time Tracker",
+  "version": "1.0",
+  "description": "Tracks time spent on each website",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://* http://*"
+  }
+}
